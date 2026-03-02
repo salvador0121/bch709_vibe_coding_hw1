@@ -205,11 +205,17 @@ if __name__ == "__main__":
         f"metrics: {tsv_path}\nplot: {png_path}\n"
     )
 
-# Interpretation:
-# 1. Codon usage and translational selection in yeast can favor GC-rich or AT-rich
-#    codons in highly expressed genes; this bias may create distinct groups of
-#    mRNAs with different overall GC fractions.
-# 2. Regional mutation/repair biases or functional compartmentalization (e.g.,
-#    different gene families or UTR structures) can lead to isochores or
-#    expression-dependent GC differences, producing apparent GC-content
-#    subpopulations.
+# Interpretation: Two biological reasons for the GC content distribution pattern in yeast mRNA
+#
+# 1) Codon usage bias and expression level:
+#    Yeast genes can use different codons depending how often they are expressed.
+#    Highly expressed genes often use preferred codons that contain more G and C bases.
+#    This creates distinct subpopulations of mRNAs with different overall GC fractions,
+#    as different genes are optimized for different expression levels.
+#
+# 2) Genomic regional variation and gene function:
+#    Different parts of the genome can experience different mutation patterns over time.
+#    These different parts, variation in gene function, and untranslated regions (UTRs)
+#    can lead to changes in GC content between mRNAs. Functional gene classes may occupy
+#    distinct genomic regions with their own mutation/repair biases, producing a
+#    heterogeneous GC distribution.

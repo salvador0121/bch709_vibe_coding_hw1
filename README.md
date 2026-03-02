@@ -47,9 +47,9 @@ python analyze_mrna_gc.py
 
 ### Why Yeast mRNAs Show GC-Content Variation:
 
-**1. Codon Usage and Translational Selection**
-Highly expressed yeast genes tend to use optimal codons that are abundant in their cellular tRNA pools. Since codon bias often correlates with GC content (certain amino acids have GC-rich or AT-rich codon families), this creates distinct subpopulations: highly expressed, codon-optimized genes may cluster at higher or lower GC content depending on the amino acid composition and the organism's tRNA pool, leading to observed heterogeneity in the overall mRNA population.
+**1. Codon Usage Bias and Expression Level**
+Yeast genes can use different codons depending on how often they are expressed. Highly expressed genes often use preferred codons that contain more G and C bases. This creates distinct subpopulations of mRNAs with different overall GC fractions, as different genes are optimized for different expression levels. The codon preferences reflect abundant tRNAs in the cell and provide selective advantages for translation efficiency.
 
-**2. Functional Gene Compartmentalization and Isochores**
-Different functional gene classes (e.g., ribosomal proteins vs. metabolic enzymes, constitutively expressed vs. stress-responsive) may occupy distinct genomic "isochores" or have different mutational/repair biases. Additionally, untranslated regions (UTRs) can have systematically different GC content than coding sequences. These functional and structural differences can produce apparent GC-content subpopulations, where genes fall into clusters reflecting their biological role and genomic context rather than a continuous uniform distribution.
+**2. Genomic Regional Variation and Gene Function**
+Different parts of the genome can experience different mutation patterns over time. These different genomic regions, variation in gene function, and untranslated regions (UTRs) can lead to changes in GC content between mRNAs. Functional gene classes may have different GC content preferences depending on their role in the cell, and regional mutation/repair biases create apparent subpopulations in the observed GC-content distribution.
 
